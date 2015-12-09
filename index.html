@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mission To Mars</title>
+		<meta charset="utf-8">
+		<meta name= "viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+		<link rel="stylesheet" type="text/css" href="sass/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="assets/js/jquery-2.1.3.min.js"></script>
+		<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+		<script type="text/javascript" src="assets/js/hammer.min.js"></script>
+		<script type="text/javascript" src="assets/js/keyboard.js"></script>
+		<script type="text/javascript" src="assets/js/TweenMax.min.js"></script>
+		<script type="text/javascript" src="assets/js/Draggable.min.js"></script>
+		<script type="text/javascript" src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<!-- content-container that follows throughout -->
+		<div class="main-content-container">
+			<!-- Landing Page content -->
+			<div class="mission-to-mars"></div>
+			<div class="start-cta">BEGIN YOUR <span>JOURNEY</span></div>
+			<div class="pentagon">
+				<div class="suit-directions">
+					<h3>SELECT YOUR <span>SPACE SUIT</span></h3>
+					<p>Use the arrow buttons to scroll through suit options</p>
+				</div>
+				<!-- ON MARS -->
+				<div class="welcome-to-mars">
+					<h3>Welcome to <span>MARS</span></h3>
+					<p>We're glad you made it.</p>
+					<p>Let's explore.</p>
+				</div>
+			</div>
+			<!-- Space Suit Content -->
+			<div class="spacesuit-showcase">
+				
+				<img src="assets/img/z-2-spacesuit.png">
+				<img src="assets/img/constellation-spacesuit.png">
+				<img src="assets/img/mark-spacesuit.png">
+
+			</div>
+			<div class="description-container">
+				<div class="spacesuit-description">
+					<h2>Z-2</h2>
+					<p>The hard composite upper torso gives this suit long-term durability. This suit uses higher fidelity boots along with materials that are compatible with a full vacuum environment. Weighing at 143 pounds, the Z-2 interfaces with NASA's advanced Portable Life Support System.
+					</p>
+				</div>
+				<div class="spacesuit-description">
+					<h2>CONSTELLATION <span>CONFIG.2</span></h2>
+					<p>Unlike Other suits, Configuration 2 is a soft suit, which allows astronauts to bend over and grasp objects when fully suited and pressurized. New joint designs allow it to operate at a higher pressure, avoiding the danger of undergoing decompression sickness.
+					</p>
+					
+				</div>
+				<div class="spacesuit-description">
+					<h2>Mark III</h2>
+					<p>A rear entry suit, the Mark III incoporates a mix of hard and soft suit components. The 8.3 poinds per square inch operating pressure makes it a "zero-rebreathe" suit, meaning astronaut would be able to transition without experiencing rapid depressurization.</p>
+				</div>
+			</div>
+			<div class="arrow-container">
+				<div class="white-arrow-right"></div>
+				<div class="white-arrow-left"></div>
+			</div>
+			<div class="choose-suit-container">
+				<div class="choose-suit">CHOOSE SUIT</div>
+				<div class="choose-suit">CHOOSE SUIT</div>
+				<div class="choose-suit">CHOOSE SUIT</div>
+			</div>
+			<!-- ON MARS CONTENT CONTAINER -->
+			<div class="mars-cta-wrapper">
+				<div class="listen-cta">LISTEN</div>
+				<div class="jump-cta">JUMP</div>
+				<div class="sunset-cta">MARTIAN SUNSET</div>
+			</div>
+		</div>
+
+
+		<div class="cta-container">
+			<div class="main-cta-box">
+				<div class="suit-selection">
+					<p>Are you sure this is the suit you want?</p>
+					<div class="suit-selection-cta no">NO</div>
+					<div class="suit-selection-cta yes">YES</div>
+				</div>
+				<div class="suit-fitting">
+					<p>Stand on the X to put on your suit.</p>
+					<div class="loading-bar-container">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+							 viewBox="0 0 901 108" enable-background="new 0 0 901 108" xml:space="preserve">
+						<polygon class= "timer-bar-3" points="569.4,19 426.2,19 356.1,89.1 499.3,89.1 "/>
+						<polygon class= "timer-bar-2" points="187.5,89.1 330.7,89.1 400.8,19 257.6,19 "/>
+						<path class= "timer-bar-1" d="M162,89.1L232.1,19H98.3c-23.1,0-42,15.8-42,35.1c0,19.3,18.9,35.1,42,35.1H162z"/>
+						<polygon class= "timer-bar-4" points="735.1,19 591.9,19 521.8,89.1 664.9,89.1 "/>
+						<path class= "timer-bar-5" d="M815.1,19h-54.6l-70.1,70.1h124.7c23.1,0,42-15.8,42-35.1C857.1,34.8,838.2,19,815.1,19z"/>
+						</svg>
+					</div>
+				</div>
+				<div class="start-mission">
+					<p>You're all suited up! <span>Let's fly to Mars.</span></p>
+					<div class="mission-cta">START THE MISSION</div>
+				</div>
+				<div class="mars-listen">
+					<p>This is what you'd hear on Mars.</p>
+					<p><span> Recorded by Opportunity Rover, louder noise responds to rougher terrain and softer sound corresponds to smoother, sandy terrain.</span></p>
+					<div class="finish-cta">FINISHED</div>
+				</div>
+				<div class="mars-jump">
+					<div class="mars-jump-load">
+						<p>Mars has lower gravity than Earth.</p>
+						<p>See how high you can jump here.</p>
+						<p>Stand on the X</p>
+						<div class="loading-bar-container">
+							<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+								 viewBox="0 0 901 108" enable-background="new 0 0 901 108" xml:space="preserve">
+							<polygon class= "timer-bar-3" points="569.4,19 426.2,19 356.1,89.1 499.3,89.1 "/>
+							<polygon class= "timer-bar-2" points="187.5,89.1 330.7,89.1 400.8,19 257.6,19 "/>
+							<path class= "timer-bar-1" d="M162,89.1L232.1,19H98.3c-23.1,0-42,15.8-42,35.1c0,19.3,18.9,35.1,42,35.1H162z"/>
+							<polygon class= "timer-bar-4" points="735.1,19 591.9,19 521.8,89.1 664.9,89.1 "/>
+							<path class= "timer-bar-5" d="M815.1,19h-54.6l-70.1,70.1h124.7c23.1,0,42-15.8,42-35.1C857.1,34.8,838.2,19,815.1,19z"/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="mars-jump-cta">
+						<p class="j">J</p>
+						<p class="u">U</p>
+						<p class="m">M</p>
+						<p class="p">P</p>
+					</div>
+					<div class="mars-jump-height">
+						<p>You have jumped</p>
+						<p>10ft 6in (3.2m) on Mars!</p>
+						<div class="finish-cta">FINISHED</div>
+					</div>
+				</div>
+				<div class="keep-exploring">
+					<p>We're dispatching your photo to Earth.</p>
+					<div class="finish-cta">KEEP EXPLORING</div>
+				</div>
+			</div>
+			<div class="mars-sunset-cta">
+				<div class="white-x"></div>
+			</div>
+			<div class="keyboard-container">
+				<div id="container">
+					<div class="textarea-container">
+						Name:<br>
+					    <textarea class="write" rows="1" cols="1"></textarea>
+					    Email:<br>
+					    <textarea class="write"></textarea>
+					    <div class="finish-cta">TRANSMIT</div>
+					</div>
+
+				</div>
+			    <ul id="keyboard">
+			        <li class="symbol"><span class="off">`</span><span class="on">~</span></li>
+			        <li class="symbol"><span class="off">1</span><span class="on">!</span></li>
+			        <li class="symbol"><span class="off">2</span><span class="on">@</span></li>
+			        <li class="symbol"><span class="off">3</span><span class="on">#</span></li>
+			        <li class="symbol"><span class="off">4</span><span class="on">$</span></li>
+			        <li class="symbol"><span class="off">5</span><span class="on">%</span></li>
+			        <li class="symbol"><span class="off">6</span><span class="on">^</span></li>
+			        <li class="symbol"><span class="off">7</span><span class="on">&amp;</span></li>
+			        <li class="symbol"><span class="off">8</span><span class="on">*</span></li>
+			        <li class="symbol"><span class="off">9</span><span class="on">(</span></li>
+			        <li class="symbol"><span class="off">0</span><span class="on">)</span></li>
+			        <li class="symbol"><span class="off">-</span><span class="on">_</span></li>
+			        <li class="symbol"><span class="off">=</span><span class="on">+</span></li>
+			        <li class="delete lastitem">delete</li>
+			        <li class="tab">tab</li>
+			        <li class="letter">q</li>
+			        <li class="letter">w</li>
+			        <li class="letter">e</li>
+			        <li class="letter">r</li>
+			        <li class="letter">t</li>
+			        <li class="letter">y</li>
+			        <li class="letter">u</li>
+			        <li class="letter">i</li>
+			        <li class="letter">o</li>
+			        <li class="letter">p</li>
+			        <li class="symbol"><span class="off">[</span><span class="on">{</span></li>
+			        <li class="symbol"><span class="off">]</span><span class="on">}</span></li>
+			        <li class="symbol lastitem"><span class="off">\</span><span class="on">|</span></li>
+			        <li class="capslock">caps lock</li>
+			        <li class="letter">a</li>
+			        <li class="letter">s</li>
+			        <li class="letter">d</li>
+			        <li class="letter">f</li>
+			        <li class="letter">g</li>
+			        <li class="letter">h</li>
+			        <li class="letter">j</li>
+			        <li class="letter">k</li>
+			        <li class="letter">l</li>
+			        <li class="symbol"><span class="off">;</span><span class="on">:</span></li>
+			        <li class="symbol"><span class="off">'</span><span class="on">&quot;</span></li>
+			        <li class="return lastitem">return</li>
+			        <li class="left-shift">shift</li>
+			        <li class="letter">z</li>
+			        <li class="letter">x</li>
+			        <li class="letter">c</li>
+			        <li class="letter">v</li>
+			        <li class="letter">b</li>
+			        <li class="letter">n</li>
+			        <li class="letter">m</li>
+			        <li class="symbol"><span class="off">,</span><span class="on">&lt;</span></li>
+			        <li class="symbol"><span class="off">.</span><span class="on">&gt;</span></li>
+			        <li class="symbol"><span class="off">/</span><span class="on">?</span></li>
+			        <li class="right-shift lastitem">shift</li>
+			        <li class="space lastitem">&nbsp;</li>
+			    </ul>	
+			</div>
+
+			
+		</div>
+
+
+
+		<!-- landing page -->
+		<div class="mars-landing-page">
+			<!-- background-video -->
+			<video autoplay muted loop id="bgvid">
+				<source src="assets/video/mars.mp4" type="video/mp4">
+			</video>
+				
+			<div class="sc-houston"></div>
+		</div>
+		<!-- Main Content -->
+		<div class="main-content-page">
+			<div class="back-menu">
+				<div class="white-x"></div>
+				<p>EXIT</p>		
+			</div>
+			<!--  -->
+		</div>
+
+		<div class="martian-page">
+			<img class="#mars-img-explore" src="assets/img/mars-landscape.jpg">
+			<div class="back-menu">
+				<div class="white-x"></div>
+				<p>EXIT</p>
+			</div>
+			<div class="sound-holder"></div>
+			<div class="selfie-cta"></div>
+			<div class="swipe-cta">
+				<div class="swipe-finger"></div>
+				<p>Swipe the landscape to see more of the red planet</p>
+				<p>Press the camera icon at the top when you find a great spot for a selfie.</p>
+			</div>
+			<div class="soundwaves"></div>
+		</div>
+
+
+
+
+	</body>
+</html>

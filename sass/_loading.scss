@@ -1,0 +1,11 @@
+
+/* primary CTA button */
+@mixin loading($loading) {
+	position:absolute;
+	background-image:url("../assets/img/bullet.png");
+	z-index: 1;
+	left:$left;
+	top:$top;
+	width:$width;
+	height:$height;
+}
