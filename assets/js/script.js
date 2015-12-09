@@ -29,13 +29,7 @@
 // };
 
 // touchEventHandler.prepareForTouchesWhenReady();
-
-Draggable.create("#mars-img-explore",{
-	type:"x,y", 
-	edgeResistance:0.65, 
-	bounds:{top:-30, left:-2160},
-	throwProps:true
-});
+var mc = new Hammer("body");
 
 
 $(document).ready(function(){
@@ -127,10 +121,10 @@ $(document).ready(function(){
 	        }
 	    });
 	});
-	
-	
-	// arrow action
-	$(".white-arrow-right").click(function(){
+
+
+	//Functions for spacesuit change 
+	function spacesuitDirectionRight(){
 		$spacesuits.push( $spacesuits.shift() );
 		console.log($spacesuits[0]);
 		$($spacesuits[0]).css({"left":"400px"}).animate({"left":"0"},200); // from off to the right, to be in view
@@ -143,9 +137,9 @@ $(document).ready(function(){
 		$chooseSuitButtons.push($chooseSuitButtons.shift() );
 		$(".choose-suit").css({"display":"none"});
 		$chooseSuitButtons[0].delay(100).fadeIn(100);
-	})
+	}
 
-	$(".white-arrow-left").click(function(){
+	function spacesuitDirectionLeft(){
 		$spacesuits.unshift( $spacesuits.pop() );
 		console.log($spacesuits[0]);
 		$($spacesuits[0]).css({"left":"-400px"}).animate({"left":"0"},200); // from off to the left, to be in view
@@ -158,8 +152,15 @@ $(document).ready(function(){
 		$chooseSuitButtons.unshift($chooseSuitButtons.pop() );
 		$(".choose-suit").css({"display":"none"});
 		$chooseSuitButtons[0].delay(100).fadeIn(100);
-	})
+	}
+	// arrow action suits
+	$(".white-arrow-right").click(spacesuitDirectionRight);
 
+	$(".white-arrow-left").click(spacesuitDirectionLeft);
+
+	// swipe action suits
+	
+	// var mc = new Hammer("body");
 	// choose suit action
 
 	$(".choose-suit").click(function(){
@@ -253,7 +254,14 @@ $(document).ready(function(){
 
 	// MARTIAN PAGE
 
-
+	Draggable.create(".mars-img-explore",{
+		type:"x,y", 
+		edgeResistance:0.65, 
+		bounds:( ".martian-page"),
+		throwProps:true,
+		zIndexBoost:false,
+		edgeResistance:1
+	});
 
 	$(".listen-cta, .jump-cta, .sunset-cta").click(function(){
 		$(this).data('clicked',true);
